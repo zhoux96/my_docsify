@@ -829,8 +829,6 @@ public void setXyz(Type value)
 
 那么这种`class`被称为`JavaBean`：
 
-![java-bean](https://www.liaoxuefeng.com/files/attachments/1286765493092418/l)
-
 上面的字段是`xyz`，那么读写方法名分别以`get`和`set`开头，并且后接大写字母开头的字段名`Xyz`，因此两个读写方法名分别是`getXyz()`和`setXyz()`。
 
 `boolean`字段比较特殊，它的读方法一般命名为`isXyz()`：
