@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>新昼-编程学习笔记</title>
@@ -8,7 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
+  <nav>
+    <a href="#/">首页</a>
+  </nav>
+
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -17,9 +23,10 @@
       // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
       loadSidebar: true,
       // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
-      loadNavbar: true,
+      // loadNavbar: true,
       // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
       subMaxLevel: 3,
+      // 搜索配置
       search: {
         paths: 'auto',
         placeholder: {
@@ -28,6 +35,18 @@
         noData: {
           '/': '找不到结果'
         },
+      },
+
+    }
+  </script>
+
+  <script>
+    window.$docsify = {
+      // docsify-copy-code (defaults)
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
       }
     }
   </script>
@@ -38,12 +57,14 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-sql.min.js"></script>
   <!-- 复制到剪切板 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- 图片放大缩小支持 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 搜索 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
-  
 </body>
+
 </html>
